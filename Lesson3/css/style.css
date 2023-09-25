@@ -20,22 +20,11 @@ header h1 {
 }
 
 main {
+    display: flex;
     background-color: beige;
     padding: 10px;
     min-height: 400px;
 }
-
-.sidebar {
-    border: 2px solid #ccc;
-    background-color: #eee;
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    margin-left: 10px;
-    float: right;
-    /* обтекание справа */
-}
-
 
 
 .mybtn {
@@ -70,22 +59,6 @@ main {
     text-align: center;
 }
 
-.message_name {
-    color: blue;  
-    font-style: italic;  
-}
-
-.message_name ::after{
-    content: ":";
-}
-
-.message_text{
-    color: #100927;
-}
-
-main {
-    display: flex;
-}
 
 #user_field {
     width: 50%;
@@ -109,10 +82,6 @@ main {
 
 #send {margin: auto; display: block;}
 
-.valid {
-    border: 5px solid green;
-}
+.valid { border: 5px solid green; }
 
-.invalid {
-    border: 5px solid red;
-}
+.invalid { border: 5px solid red; }
