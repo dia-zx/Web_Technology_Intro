@@ -18,3 +18,6 @@ CREATE TABLE mates( -- таблица
 INSERT INTO `mates` (`name1`, `age`, `address`) VALUES ('Павел', '16', 'Парковая 1');
 INSERT INTO `mates` (`name1`, `age`, `address`) VALUES ('Илья', '18', 'Речная 22');
 INSERT INTO `mates` (`name1`, `age`, `address`) VALUES ('Сургей', '17', 'Сенная 5');
+
+-- выведем таблицу
+SELECT * FROM `mates`;
