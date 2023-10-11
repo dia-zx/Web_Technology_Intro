@@ -2,10 +2,11 @@
 $pdo = new PDO('sqlite:chat.db');
 if(isset($_POST['message']) && isset($_POST['user']) && !empty($_POST['message'] && !empty($_POST['user'])){
     $message = strip_tags($_POST['message']);
+    $user = strip_tags($_POST['user']);
     $statement = $pdo->prepare(
         'INSERT INTO messages (user, message_text) VALUES (?, ?)'
     );
-    $statement->execute([$_POST['user'], $message]);
+    $statement->execute([$user, $message]);
     $result = ['status' => "ok"];
     echo json_encode($result, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
     die();
